@@ -1,0 +1,23 @@
+SISTEMA DE GESTIÓN BIBLIOTECARIA - BACKEND
+
+Arquitectura en capas:
+
+1. Capa de Control / API
+   app/routes/
+
+2. Capa de Lógica de Negocio
+   app/services/
+
+3. Capa de Acceso a Datos
+   app/models/
+   app/database/
+
+4. Autenticación y roles
+   app/auth/
+   LDAP / Active Directory se considera un servicio institucional externo.
+
+5. Base de datos
+   PostgreSQL se ejecutará en su propio contenedor.
+   database/ contiene migraciones, datos iniciales e inicialización.
+
+Este repositorio representa el Contenedor Backend Python del diagrama de arquitectura.
